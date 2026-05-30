@@ -1,7 +1,9 @@
-import { type XmcpConfig } from 'xmcp'
+import { type XmcpConfig } from "xmcp";
 
 const config: XmcpConfig = {
-  http: true,
-}
+    http: {
+        port: parseInt(process.env.PORT || "3000"),
+    },
+};
 
-export default config
+export default config;
